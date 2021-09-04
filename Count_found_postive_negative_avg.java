@@ -3,8 +3,8 @@ public class Count_found_postive_negative_avg {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int input = 1, pos = 0, neg = 0, sum = 0, count=0;
-		double avg;
+		int input = 1, pos = 0, neg = 0, count=0;
+		double avg = 0.0, sum = 0.0;
 		System.out.print("Enter any Integer. Enter 0 to end.");
 		while (input != 0) {
 		    input = sc.nextInt();
@@ -16,7 +16,7 @@ public class Count_found_postive_negative_avg {
 			count++;
 			
 		}
-		avg = sum/(double)count;
+		avg = sum/(count-1);
 		System.out.println("The number of positives is : "+pos);
 		System.out.println("The number of negatives is : "+neg);
 		System.out.println("The total is : "+sum);
@@ -25,6 +25,7 @@ public class Count_found_postive_negative_avg {
 	}
 
 }
+
 
 /* (Count positive and negative numbers and compute the average of numbers) Write a program that
 reads an unspecified number of integers, determines how many positive and negative values have

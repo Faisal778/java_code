@@ -15,6 +15,7 @@ public class Perncetage_increase_over_years {
         	 year--;
          }
          System.out.println("The price after "+year+" with "+percentage+"increase is : "+price);
+		sc.close();
 	}
 
 }
